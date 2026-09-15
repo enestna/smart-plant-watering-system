@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+}
+
+.durum-etiketi {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.mod-oto { background: #3498db; }
+.mod-manuel { background: #f39c12; }
+
+.bilgi-kartlari {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.kart h3 { font-size: 2rem; margin: 10px 0; }
+
+.butonlar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.btn {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn:hover { transform: scale(1.05); }
+.btn-mavi { background: #3498db; }
+.btn-yesil { background: #2ecc71; }
+.btn-kirmizi { background: #e74c3c; }
+
+/* Tablo */
+.tablo-panel {
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  border-radius: 15px;
+  padding: 20px;
+}
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
